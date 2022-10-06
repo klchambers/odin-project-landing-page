@@ -1,5 +1,10 @@
 /* stylesheet.css */
 
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +13,6 @@ body {
 .box {
     display: flex;
     flex-direction: row;
-    margin: 50px;
     align-items: center;
     width: fit-content;
 }
@@ -16,23 +20,20 @@ body {
 img {
     width: 500px;
     height: auto;
+    border-radius: 5px;
 }
 
 .header {
-    
+    margin: 0;
     background-color: #1F2937;
     color: #F9FAF8;
-    align-items: center;
-    flex: 1;
     padding: 10px;
     padding-bottom: 30px;
     padding-right: 100px;
-    margin-top: 0;
-    vertical-align: top;
-    position: absolute;
-    top: 0;
+    top:0;
     left: 0;
     right: 0;
+    margin-left: 0;
 }
 
 .toolbar {
@@ -41,25 +42,22 @@ img {
     justify-content: space-between;
     gap: 8px;
     padding-bottom: 5px;
-    background-color: #3882F6;
+    background-color: #1F2937;
     vertical-align: top;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     padding: 0.25%;
-    padding-left: 10%;
+    padding-left: 75px;
     padding-right: 2%;
     align-items: center;
+    overflow: fixed;
 }
 
 .infobox {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
     margin-left: 50px;
     margin-right: 50px;
-    flex-wrap: wrap;
     width: 400px;
     
 }
@@ -76,17 +74,19 @@ img {
     gap: 16px;
 }
 
-.logo {
+.left {
     font-size: 24px;
 }
 
 .herotext {
     color: #F9FAF8;
     font-size: 48px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bolder;
     padding: 20px;
     margin-left: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .herosecondary {
@@ -96,15 +96,17 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
-    margin-left: 0;
+    margin: 0;
     width: 300px;
 }
 
 .button {
     background-color: #3882F6;
     padding: 10px;
-    border-radius: 25px;
-    width: 70px;
+    border-radius: 10px;
+    width: 100px;
+    color: #F9FAF8;
+    margin-left: 20px;
 }
 
 a {
@@ -112,3 +114,11 @@ a {
     text-decoration: none;
     color: white;
   }
+
+h2 {
+    color: black;
+}
+
+.mainbody {
+    margin: 50px;
+}
