@@ -215,3 +215,16 @@ h2 {
     outline: #F9FAF8;
     font-size: large;
 }
+
+.footer {
+    flex-grow: 1;
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    flex-direction: row;
+    bottom: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 100%;
+    margin-top: 20px;
+}
